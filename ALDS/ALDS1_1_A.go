@@ -1,9 +1,3 @@
-// bufio の Scanner を使う (2) スペース区切りで読み込む
-// 例：最初の整数 N に対して，それに続く N 個の整数の和を求めるプログラム
-//
-// Go 言語で標準入力から読み込む競技プログラミングのアレ --- 改訂第二版 - Qiita
-// https://qiita.com/tnoda_/items/b503a72eac82862d30c6
-
 package main
 
 import (
