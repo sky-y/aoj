@@ -1,3 +1,4 @@
+// ALDS1_2_C: Stable Sort
 #include <iostream>
 using namespace std;
 
