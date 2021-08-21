@@ -31,8 +31,6 @@ func trace(a []int, n int) {
 	fmt.Printf("\n")
 }
 
-//
-
 func selectionSort(a []int, n int) {
 	count := 0
 
