@@ -39,12 +39,13 @@ long long getKey(string str) {
 
 int h1(int key) { return key % M; }
 int h2(int key) { return 1 + (key % (M - 1)); }
+int h0(int key, long long i) { return (h1(key) + i * h2(key)) % M; }
 
 bool find(string str) {
   long long key, h;
   key = getKey(str);
   for (long long i = 0;; i++) {
-    h = (h1(key) + i * h2(key)) % M;
+    h = h0(key, i);
 
     if (H[h] == str) {
       return true;
@@ -59,7 +60,8 @@ bool insert(string str) {
   key = getKey(str);
 
   for (long long i = 0;; i++) {
-    h = (h1(key) + i * h2(key)) % M;
+    h = h0(key, i);
+
     if (H[h] == str) {
       return true;
     } else if (H[h].size() == 0) {
