@@ -42,5 +42,19 @@
 			"  return 0;",
 			"}"
 		]
+	},
+	"cout": {
+		"scope": "cpp",
+		"prefix": "cout",
+		"body": [
+			"cout << \"$0\" << endl;"
+		]
+	},
+	"cin": {
+		"scope": "cpp",
+		"prefix": "cin",
+		"body": [
+			"cin >> $0;"
+		]
 	}
 }
