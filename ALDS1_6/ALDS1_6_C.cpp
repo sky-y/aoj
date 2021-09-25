@@ -36,7 +36,7 @@ void merge(Card A[], int left, int mid, int right) {
   int i = 0;
   int j = 0;
   for (int k = left; k < right; k++) {
-    if (L[i].value < R[j].value) {
+    if (L[i].value <= R[j].value) {
       A[k] = L[i];
       i++;
     } else {
@@ -99,8 +99,6 @@ int main() {
   bool stable = true;
   for (int i = 0; i < n; i++) {
     if (A[i].suit != B[i].suit) {
-      cout << "A: " << A[i].suit << " " << A[i].value << endl;
-      cout << "B: " << B[i].suit << " " << B[i].value << endl;
       stable = false;
     }
   }
